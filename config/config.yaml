@@ -1,0 +1,21 @@
+project:
+  seed: 20260715
+  output_root: results
+species:
+  pr: {name: Pristina, h5ad: data/processed/pristina_gut.h5ad, protein_fasta: data/reference/pristina_proteins.faa, cell_type_key: cell_type, sample_key: sample_id}
+  hs: {name: Human, h5ad: data/processed/human_gut.h5ad, protein_fasta: data/reference/human_proteins.faa, cell_type_key: cell_type, sample_key: sample_id}
+  dr: {name: Zebrafish, h5ad: data/processed/zebrafish_gut.h5ad, protein_fasta: data/reference/zebrafish_proteins.faa, cell_type_key: cell_type, sample_key: sample_id}
+samap:
+  maps_directory: data/homology/maps
+  n_iterations: 3
+  cross_species_k: 20
+  n_gene_chunks: 1
+  ncpus: 4
+  umap: true
+  eval_threshold: 1.0e-6
+localsamap:
+  permutations: 1000
+  alpha: 0.05
+  alternative: greater
+  permutation_strata: [sample_id]
+

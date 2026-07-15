@@ -1,0 +1,9 @@
+channels:
+  - conda-forge
+  - bioconda
+channel_priority: strict
+envs_dirs:
+  - ./.conda/envs
+pkgs_dirs:
+  - ./.conda/pkgs
+

@@ -1,0 +1,10 @@
+.conda/
+.cache/
+.snakemake/
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+logs/*.log
+data/
+results/
