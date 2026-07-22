@@ -48,3 +48,13 @@ The workflow validates expression/protein identifiers and metadata, writes the
 official SAMap outputs to `results/original_samap/`, and writes the separate
 statistical interpretation to `results/localsamap/`. The improved stage never
 overwrites the official SAMap model.
+
+## Citation, datasets, and permissions
+
+This repository is proprietary: written permission is required before use,
+copying, modification, or redistribution. See [LICENSE](LICENSE).
+
+For the recommended citation for this repository, use [CITATION.cff](CITATION.cff).
+For complete attribution of the Pristina, human, and zebrafish datasets, the
+SAMap repository and paper, BLAST+, Scanpy, AnnData, and Ensembl resources, see
+[REFERENCES.md](REFERENCES.md).

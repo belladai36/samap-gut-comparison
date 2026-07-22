@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this repository or its derived results, please cite it and the upstream resources listed in REFERENCES.md."
+title: "Pristina gut cross-species SAMap project"
+type: software
+authors:
+  - family-names: Dai
+    given-names: Jinglan
+date-released: 2026-07-22
+repository-code: "https://github.com/belladai36/samap-gut-comparison"
+abstract: "A reproducible comparative single-cell workflow that maps Pristina leidyi gut cell types to human and zebrafish intestinal cell atlases using SAMap and reciprocal BLAST homology maps."
+keywords:
+  - single-cell RNA sequencing
+  - comparative transcriptomics
+  - SAMap
+  - Pristina leidyi
+  - gut
+references:
+  - type: article
+    authors:
+      - family-names: Tarashansky
+        given-names: Alexander J.
+    title: "Mapping single-cell atlases throughout Metazoa unravels cell type evolution"
+    journal: eLife
+    volume: "10"
+    year: 2021
+    doi: 10.7554/eLife.66747
+  - type: article
+    authors:
+      - family-names: Álvarez-Campos
+        given-names: Patricia
+    title: "Annelid adult cell type diversity and their pluripotent cellular origins"
+    journal: Nature Communications
+    volume: "15"
+    year: 2024
+    doi: 10.1038/s41467-024-47401-6
+  - type: article
+    authors:
+      - family-names: Elmentaite
+        given-names: Rasa
+    title: "Cells of the human intestinal tract mapped across space and time"
+    journal: Nature
+    volume: "597"
+    pages: 250-255
+    year: 2021
+    doi: 10.1038/s41586-021-03852-1
+  - type: article
+    authors:
+      - family-names: Jones
+        given-names: Lena O.
+    title: "Single-cell resolution of the adult zebrafish intestine under conventional conditions and in response to an acute Vibrio cholerae infection"
+    journal: Cell Reports
+    volume: "42"
+    year: 2023
+    doi: 10.1016/j.celrep.2023.113407
