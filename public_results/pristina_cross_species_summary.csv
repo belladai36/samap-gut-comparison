@@ -1,0 +1,19 @@
+pristina_cell_type,comparison_species,top_match,top_score,second_match,second_score,score_margin,specificity_class
+stomach 2,human,Colonocyte,0.5926894250809148,TA,0.0289460721178067,0.5637433529631081,higher specificity
+anterior intestine,human,Enterocyte,0.444795960534239,Paneth,0.2382737175175206,0.2065222430167183,higher specificity
+stomach 1,human,Tuft,0.4188744104028229,TA,0.3180600417296596,0.1008143686731632,moderate specificity
+anterior/mid-intestine 2,human,Paneth,0.3772924268367174,BEST4+ epithelial,0.0765241519271292,0.3007682749095882,higher specificity
+crop,human,Goblet cell,0.2387889703458059,BEST2+ Goblet cell,0.1628074739087446,0.0759814964370613,moderate specificity
+gut progenitors,human,TA,0.2346434072393019,Stem cells,0.1922153393187169,0.042428067920585,ambiguous
+anterior/mid-intestine 1,human,EC cells (TAC1+),0.2263818522980233,Paneth,0.2233803193978776,0.0030015329001456,ambiguous
+posterior intestine,human,BEST2+ Goblet cell,0.1187217170057472,Paneth,0.0925163525960401,0.026205364409707,ambiguous
+caveolin+ cells,human,BEST2+ Goblet cell,0.1143960182890211,Goblet cell,0.066859993533728,0.0475360247552931,ambiguous
+anterior/mid-intestine 2,zebrafish,LRE,0.7621545453573194,Tuft-like,0.0307036965555758,0.7314508488017436,higher specificity
+anterior/mid-intestine 1,zebrafish,EC,0.4513937656074361,Pancreatic,0.3238265116411834,0.1275672539662526,moderate specificity
+stomach 1,zebrafish,T Cell,0.3453728066708516,Best4/Otop2,0.32804610425689,0.0173267024139615,ambiguous
+anterior intestine,zebrafish,EC,0.3128221119175024,LRE,0.2547906670100989,0.0580314449074035,moderate specificity
+posterior intestine,zebrafish,Goblet-like,0.2763605268318314,Epidermal,0.2238942947572705,0.0524662320745608,moderate specificity
+gut progenitors,zebrafish,Goblet,0.2271134901177823,Cycling,0.2246567398441125,0.0024567502736698,ambiguous
+stomach 2,zebrafish,LRE,0.2194801863105551,Unknown 1,0.1267904845215363,0.0926897017890188,moderate specificity
+crop,zebrafish,Endocrine,0.0889925770868928,Tuft-like,0.0627926981229166,0.0261998789639762,ambiguous
+caveolin+ cells,zebrafish,Endocrine,0.0741566723915691,EC,0.0639869981996902,0.0101696741918789,ambiguous
