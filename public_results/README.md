@@ -2,6 +2,10 @@
 
 This folder contains compact, shareable outputs from the completed three-species SAMap analysis (Pristina, human, zebrafish). It excludes raw sequencing data, `.h5ad` expression objects, BLAST databases, and the serialized SAMap object.
 
+Use of this material requires written permission under the repository
+[`LICENSE`](../LICENSE). Cite this project through [`CITATION.cff`](../CITATION.cff)
+and credit all upstream datasets and tools listed in [`REFERENCES.md`](../REFERENCES.md).
+
 ## Files
 
 - `pristina_cross_species_summary.csv`: best and second-best cell-type matches, scores, and score margins.

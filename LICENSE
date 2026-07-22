@@ -10,3 +10,7 @@ part of this repository without prior written permission from the copyright
 holder.
 
 For permission requests, please contact the repository owner through GitHub.
+
+If written permission to use this material is granted, cite this repository
+and provide attribution to the third-party datasets, software, and sequence
+resources listed in `CITATION.cff` and `REFERENCES.md`.
