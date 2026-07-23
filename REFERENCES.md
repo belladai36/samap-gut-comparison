@@ -43,6 +43,9 @@ redistribution.
   https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230044
 - Broad Single Cell Portal study SCP2141:
   https://singlecell.broadinstitute.org/single_cell/study/SCP2141/adult-zebrafish-intestine
+- Park, J. *et al.* (2019). Lysosome-rich enterocytes mediate protein
+  absorption in the vertebrate gut. *Developmental Cell*, 51, 7–20.e6.
+  https://doi.org/10.1016/j.devcel.2019.08.001
 
 ## Method and software
 
