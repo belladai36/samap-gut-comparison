@@ -1,0 +1,5 @@
+test_id,reference_species,reference_cell_type,expected_pristina_cell_type,reference_markers_tested,translated_module_genes,expected_pristina_cells,observed_mean_z_module_score,permutation_z_score,one_sided_permutation_p,permutations,bh_fdr
+human_colonocyte,hs,Colonocyte,stomach 2,50,30,265,0.06087267026305199,5.444975028684615,0.0004997501249375312,2000,0.0004997501249375312
+human_paneth,hs,Paneth,anterior/mid-intestine 2,50,24,514,0.11990872025489807,12.380741553517081,0.0004997501249375312,2000,0.0004997501249375312
+human_enterocyte,hs,Enterocyte,anterior intestine,50,38,1429,0.026899931952357292,6.713934038144595,0.0004997501249375312,2000,0.0004997501249375312
+zebrafish_lre,dr,LRE,anterior/mid-intestine 2,50,38,514,0.4017151892185211,47.28591985913714,0.0004997501249375312,2000,0.0004997501249375312

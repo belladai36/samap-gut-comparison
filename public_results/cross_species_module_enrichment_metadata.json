@@ -1,0 +1,31 @@
+{
+  "seed": 20260715,
+  "permutations": 2000,
+  "top_reference_markers": 50,
+  "tests": [
+    [
+      "human_colonocyte",
+      "hs",
+      "Colonocyte",
+      "stomach 2"
+    ],
+    [
+      "human_paneth",
+      "hs",
+      "Paneth",
+      "anterior/mid-intestine 2"
+    ],
+    [
+      "human_enterocyte",
+      "hs",
+      "Enterocyte",
+      "anterior intestine"
+    ],
+    [
+      "zebrafish_lre",
+      "dr",
+      "LRE",
+      "anterior/mid-intestine 2"
+    ]
+  ]
+}
