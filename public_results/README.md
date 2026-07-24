@@ -12,6 +12,10 @@ and credit all upstream datasets and tools listed in [`REFERENCES.md`](../REFERE
 - `pristina_marker_homologs_top3.csv`: Pristina gut marker genes with the top three BLAST-supported human and zebrafish homolog candidates.
 - `best_match_scores.png`: best match score for each Pristina gut cell type against each comparison species.
 - `match_specificity_margins.png`: difference between the best and second-best match for each cell type and species.
+- `priority_marker_validation.csv`: Ensembl-annotated top marker candidates for
+  the three priority correspondences.
+- `priority_candidate_assessment.md`: conservative interpretation of the
+  priority marker evidence and the next validation experiments.
 
 ## Interpretation
 
