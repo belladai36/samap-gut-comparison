@@ -16,6 +16,14 @@ and credit all upstream datasets and tools listed in [`REFERENCES.md`](../REFERE
   the three priority correspondences.
 - `priority_candidate_assessment.md`: conservative interpretation of the
   priority marker evidence and the next validation experiments.
+- `cross_species_module_enrichment.csv`: normalized, translated marker-module
+  enrichment statistics for four pre-specified candidate correspondences.
+- `cross_species_module_enrichment.png`: visualization of the cell-level
+  permutation z-scores.
+- `cross_species_module_enrichment_methods.md`: method and inferential
+  limitations for the permutation analysis.
+- `translated_reference_marker_modules.csv`: reference markers and their best
+  BLAST-supported Pristina targets used in the module tests.
 
 ## Interpretation
 

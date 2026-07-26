@@ -3,6 +3,10 @@
 This project compares Pristina gut cell types with human and zebrafish
 intestinal cell atlases using SAMap.
 
+The current study status, results, limitations, and next steps are maintained
+in the [living project report](PROGRESS.md). Reproducible result notebooks are
+in [`notebooks/`](notebooks/).
+
 ## Environment
 
 Create the project-local environment (the included `.condarc` keeps both
