@@ -27,6 +27,11 @@ similarity and BLAST homology maps to connect non-identical gene repertoires.
 6. Performed a pre-specified, exploratory module-enrichment validation using
    normalized expression, translated reference markers, 2,000 label
    permutations, and Benjamini–Hochberg FDR correction.
+7. Built a spatial-validation priority panel for the LRE-like hypothesis from
+   the translated LRE module, Pristina expression specificity, and alignment
+   quality. The canonical zebrafish `cubn`, `dab2`, and `amn` candidates were
+   retained as context checks, not primary positive probes, because they are
+   not enriched in the Pristina target population.
 
 ## Current findings
 
@@ -43,6 +48,13 @@ they do not turn cells into independent biological replicates or account for
 all donor, batch, or evolutionary dependence. The zebrafish input has one
 sample, so its inference must be especially cautious.
 
+For the LRE-like hypothesis, the primary spatial panel comprises five
+Pristina-enriched candidates connected to zebrafish lysosomal/protein-digestion
+genes: `PrileiEVm011523t1` (`fuca1.1`), `PrileiEVm008813t1` (`hexb`),
+`PrileiEVm014063t1` (`ctsl.1`), `PrileiEVm014379t1` (`ctsbb`), and
+`PrileiEVm012889t1` (`naga`). This supports testing a **lysosomal program**;
+it does not prove complete conservation of canonical zebrafish LRE machinery.
+
 ## Main outputs
 
 - [Cross-species best-match summary](public_results/pristina_cross_species_summary.csv)
@@ -50,6 +62,8 @@ sample, so its inference must be especially cautious.
 - [Module-enrichment statistics](public_results/cross_species_module_enrichment.csv)
 - [Module-enrichment methods and limitations](public_results/cross_species_module_enrichment_methods.md)
 - [Marker modules translated through BLAST](public_results/translated_reference_marker_modules.csv)
+- [LRE-like spatial validation panel](public_results/lre_validation_panel.md)
+- [LRE mechanistic context checks](public_results/lre_mechanistic_context_checks.csv)
 - [Public result figures and tables](public_results/README.md)
 
 ## Reproducible notebooks
@@ -57,6 +71,7 @@ sample, so its inference must be especially cautious.
 - [01 — SAMap mapping summary](notebooks/01_samap_mapping_summary.ipynb)
 - [02 — Cross-species module validation](notebooks/02_cross_species_module_validation.ipynb)
 - [03 — Priority marker review](notebooks/03_priority_marker_review.ipynb)
+- [04 — LRE-like spatial validation panel](notebooks/04_lre_validation_panel.ipynb)
 
 Each notebook uses the shareable tables in `public_results/`; it therefore does
 not require the large `.h5ad` objects or serialized SAMap model. Run from the
@@ -69,8 +84,7 @@ repository root with the project environment:
 
 ## Next steps
 
-1. Inspect LRE-associated module genes in Pristina and select a short,
-   biologically interpretable validation panel.
+1. Design and quality-check spatial probes for the five-gene LRE-like panel.
 2. Validate the leading candidates using spatial expression or in situ methods.
 3. When independent biological replicates are available, repeat the tests with
    donor/animal-aware pseudobulk rather than cell-level label permutations.

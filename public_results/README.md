@@ -24,6 +24,13 @@ and credit all upstream datasets and tools listed in [`REFERENCES.md`](../REFERE
   limitations for the permutation analysis.
 - `translated_reference_marker_modules.csv`: reference markers and their best
   BLAST-supported Pristina targets used in the module tests.
+- `lre_validation_panel.csv` and `lre_validation_panel.md`: a five-gene,
+  expression- and homology-screened panel for spatial testing of the LRE-like
+  hypothesis.
+- `lre_validation_panel.png`: expression enrichment and detection-specificity
+  visualization for the five primary panel genes.
+- `lre_mechanistic_context_checks.csv`: canonical zebrafish LRE machinery genes
+  that are not primary positive Pristina probes under the current data.
 
 ## Interpretation
 
