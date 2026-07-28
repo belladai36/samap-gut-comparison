@@ -31,6 +31,12 @@ and credit all upstream datasets and tools listed in [`REFERENCES.md`](../REFERE
   visualization for the five primary panel genes.
 - `lre_mechanistic_context_checks.csv`: canonical zebrafish LRE machinery genes
   that are not primary positive Pristina probes under the current data.
+- `lre_panel_cluster_specificity.csv` and `lre_panel_target_summary.csv`:
+  cluster-by-gene expression and target-population summary for the five primary
+  LRE-like candidates.
+- `lre_panel_cluster_specificity.png` and `lre_panel_umap_expression.png`:
+  the corresponding dot plot and computational expression display. A UMAP is
+  not spatial tissue evidence.
 
 ## Interpretation
 

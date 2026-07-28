@@ -1,6 +1,6 @@
 # Living project report: Pristina gut cross-species comparison
 
-**Last updated:** 2026-07-26  
+**Last updated:** 2026-07-28  
 **Project status:** baseline SAMap analysis and exploratory module validation complete
 
 ## Aim
@@ -32,6 +32,11 @@ similarity and BLAST homology maps to connect non-identical gene repertoires.
    quality. The canonical zebrafish `cubn`, `dab2`, and `amn` candidates were
    retained as context checks, not primary positive probes, because they are
    not enriched in the Pristina target population.
+8. Confirmed the five primary LRE-like panel genes across every annotated
+   Pristina gut population. `anterior/mid-intestine 2` has rank 1 mean
+   normalized expression for all five genes (`fuca1.1`, `hexb`, `ctsl.1`,
+   `ctsbb`, and `naga`). This is cluster-specificity support, not spatial
+   validation.
 
 ## Current findings
 
@@ -63,6 +68,8 @@ it does not prove complete conservation of canonical zebrafish LRE machinery.
 - [Module-enrichment methods and limitations](public_results/cross_species_module_enrichment_methods.md)
 - [Marker modules translated through BLAST](public_results/translated_reference_marker_modules.csv)
 - [LRE-like spatial validation panel](public_results/lre_validation_panel.md)
+- [LRE panel cluster-specificity table](public_results/lre_panel_cluster_specificity.csv)
+- [LRE panel target summary](public_results/lre_panel_target_summary.csv)
 - [LRE mechanistic context checks](public_results/lre_mechanistic_context_checks.csv)
 - [Public result figures and tables](public_results/README.md)
 
@@ -85,7 +92,9 @@ repository root with the project environment:
 ## Next steps
 
 1. Design and quality-check spatial probes for the five-gene LRE-like panel.
-2. Validate the leading candidates using spatial expression or in situ methods.
+2. Validate the leading candidates using spatial expression or in situ methods;
+   require co-localization in anatomical anterior/mid intestine rather than
+   interpreting UMAP position as tissue location.
 3. When independent biological replicates are available, repeat the tests with
    donor/animal-aware pseudobulk rather than cell-level label permutations.
 4. Compare original SAMap outputs with the separate local-pattern method only

@@ -293,6 +293,24 @@ def main() -> None:
             "pristina_target_detection_fraction", "pristina_detection_difference",
         ]]
         """),
+        markdown("## Confirmation across all Pristina gut populations"),
+        code("""
+        target = pd.read_csv(PUBLIC / "lre_panel_target_summary.csv")
+        target
+        """),
+        markdown("""
+        All five primary genes rank first in anterior/mid-intestine 2 by mean
+        normalized expression across the annotated Pristina gut populations.
+        This confirms the panel's internal cluster specificity. It does not
+        demonstrate anatomical co-localization: the UMAP below is a
+        computational embedding, not physical tissue space.
+        """),
+        code("""
+        from IPython.display import Image, display
+
+        display(Image(filename=PUBLIC / "lre_panel_cluster_specificity.png"))
+        display(Image(filename=PUBLIC / "lre_panel_umap_expression.png"))
+        """),
         markdown("## Results"),
         code("""
         fig, axes = plt.subplots(1, 2, figsize=(10, 4.5), sharey=True)

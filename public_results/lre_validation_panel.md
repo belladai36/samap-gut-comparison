@@ -15,6 +15,21 @@ It is not a definitive cell-type annotation.
 
 Use a multiplex panel of several primary positive genes. Confirm that signals co-localize in anterior/mid-intestine 2, then compare the localization with established gut-region markers. The canonical zebrafish machinery genes should be interpreted as separate context checks, not assumed to be positive Pristina markers. A negative or discordant result should be interpreted as evidence against, not merely absence of proof for, the LRE-like hypothesis.
 
+## Computational confirmation across Pristina populations
+
+Using the same normalized Pristina expression object, each primary panel gene
+was compared across every annotated gut population. `anterior/mid-intestine 2`
+ranked **first** for mean normalized log1p expression for all five panel genes.
+The most pronounced signals are `fuca1.1` (mean 2.587; detected in 58.0% of
+target cells) and `hexb` (mean 2.464; detected in 54.7% of target cells).
+The complete cluster-by-gene statistics are in
+`lre_panel_cluster_specificity.csv`; the dot plot and UMAP display are
+`lre_panel_cluster_specificity.png` and `lre_panel_umap_expression.png`.
+
+This is an internal single-cell-data confirmation of target-population
+specificity. A UMAP is not physical tissue space, so this result does **not**
+replace the planned spatial co-localization experiment.
+
 ## Panel
 
 | Rank | Zebrafish symbol | Pristina gene | Class | Homology quality | Identity (%) | Alignment length | Pristina log2 FC | Target detection | Detection difference |
