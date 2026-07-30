@@ -37,6 +37,10 @@ similarity and BLAST homology maps to connect non-identical gene repertoires.
    normalized expression for all five genes (`fuca1.1`, `hexb`, `ctsl.1`,
    `ctsbb`, and `naga`). This is cluster-specificity support, not spatial
    validation.
+9. Prepared primary and backup 400-nt probe regions for all five LRE-like
+   targets. Each recommended region passed a conservative exact-20-mer
+   transcriptome screen with zero strong non-self matches. These are
+   platform-neutral target regions, not final assay oligos.
 
 ## Current findings
 
@@ -70,6 +74,8 @@ it does not prove complete conservation of canonical zebrafish LRE machinery.
 - [LRE-like spatial validation panel](public_results/lre_validation_panel.md)
 - [LRE panel cluster-specificity table](public_results/lre_panel_cluster_specificity.csv)
 - [LRE panel target summary](public_results/lre_panel_target_summary.csv)
+- [LRE probe-region design and limitations](public_results/lre_probe_region_design.md)
+- [Recommended probe regions](public_results/lre_probe_region_recommendations.csv)
 - [LRE mechanistic context checks](public_results/lre_mechanistic_context_checks.csv)
 - [Public result figures and tables](public_results/README.md)
 
@@ -91,7 +97,8 @@ repository root with the project environment:
 
 ## Next steps
 
-1. Design and quality-check spatial probes for the five-gene LRE-like panel.
+1. Select an assay platform (HCR RNA-FISH, smFISH, or ISH/RNAscope) and use the
+   recommended target regions to create final assay-specific oligos.
 2. Validate the leading candidates using spatial expression or in situ methods;
    require co-localization in anatomical anterior/mid intestine rather than
    interpreting UMAP position as tissue location.

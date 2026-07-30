@@ -37,6 +37,12 @@ and credit all upstream datasets and tools listed in [`REFERENCES.md`](../REFERE
 - `lre_panel_cluster_specificity.png` and `lre_panel_umap_expression.png`:
   the corresponding dot plot and computational expression display. A UMAP is
   not spatial tissue evidence.
+- `lre_probe_region_design.md`: recommended 400-nt target regions, exact
+  20-mer transcriptome-screening rule, limitations, and assay-specific next
+  steps.
+- `lre_probe_candidate_regions.fasta`, `lre_probe_candidate_regions.csv`, and
+  `lre_probe_region_recommendations.csv`: platform-neutral candidate sequences
+  and one primary plus one backup region for each of the five panel genes.
 
 ## Interpretation
 
