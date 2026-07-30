@@ -40,8 +40,14 @@ MPLCONFIGDIR="$PWD/.cache/matplotlib" conda run --no-capture-output \
 
 ## Comparative workflow
 
-Study-specific inputs remain local and are excluded from version control.
-Configure paths and metadata keys in `config/config.yaml`, then run:
+Study-specific inputs remain local and are excluded from version control. Start
+from the portable template, then configure paths and metadata keys locally:
+
+```bash
+cp config/config.example.yaml config/config.yaml
+```
+
+Then run:
 
 ```bash
 XDG_CACHE_HOME="$PWD/.cache" snakemake -n
@@ -53,6 +59,13 @@ the official SAMap implementation and writes results to
 `results/original_samap/`. This public repository does not include an
 experimental local-pattern extension; that method should be released and
 installed separately before it is used in a reproducible workflow.
+
+## Repository checks
+
+GitHub Actions compiles the public Python scripts on every push and pull
+request. It does not run SAMap because the full analysis requires large,
+externally obtained expression and sequence files that are intentionally not
+distributed here.
 
 ## Citation, datasets, and permissions
 
