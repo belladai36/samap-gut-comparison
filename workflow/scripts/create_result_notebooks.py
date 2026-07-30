@@ -253,6 +253,98 @@ def main() -> None:
           in the Pristina atlas.
         """),
     ])
+
+    write_notebook("04_lre_validation_panel.ipynb", [
+        markdown("""
+        # LRE-like spatial validation panel
+
+        ## tl;dr
+
+        The primary positive panel for the Pristina anterior/mid-intestine 2
+        LRE-like hypothesis contains five translated lysosomal/protein-digestion
+        genes: `fuca1.1`, `hexb`, `ctsl.1`, `ctsbb`, and `naga`. The canonical
+        zebrafish LRE machinery candidates `cubn`, `dab2`, and `amn` are not
+        enriched in this Pristina population, so they are context checks rather
+        than primary positive probes.
+        """),
+        markdown("""
+        ## Context & Methods
+
+        The panel begins with zebrafish LRE markers translated to Pristina by
+        the precomputed BLAST table. Pristina expression was normalized to
+        10,000 counts per cell and log1p transformed. Primary panel candidates
+        require high alignment support, positive target-versus-other expression,
+        and a detection-fraction difference above 0.05.
+
+        **Key assumption:** BLAST alignment supports a candidate homology
+        relationship; it does not prove one-to-one orthology or conserved
+        function. The literature rationale for the zebrafish LRE program is
+        Park et al. (2019), *Developmental Cell*,
+        doi:10.1016/j.devcel.2019.08.001.
+        """),
+        code(SETUP),
+        markdown("## Data"),
+        code("""
+        panel = pd.read_csv(PUBLIC / "lre_validation_panel.csv")
+        context = pd.read_csv(PUBLIC / "lre_mechanistic_context_checks.csv")
+        panel[[
+            "panel_rank", "gene_symbol", "pristina_gene", "identity",
+            "alignment_length", "pristina_log2_fc_target_vs_other",
+            "pristina_target_detection_fraction", "pristina_detection_difference",
+        ]]
+        """),
+        markdown("## Confirmation across all Pristina gut populations"),
+        code("""
+        target = pd.read_csv(PUBLIC / "lre_panel_target_summary.csv")
+        target
+        """),
+        markdown("""
+        All five primary genes rank first in anterior/mid-intestine 2 by mean
+        normalized expression across the annotated Pristina gut populations.
+        This confirms the panel's internal cluster specificity. It does not
+        demonstrate anatomical co-localization: the UMAP below is a
+        computational embedding, not physical tissue space.
+        """),
+        code("""
+        from IPython.display import Image, display
+
+        display(Image(filename=PUBLIC / "lre_panel_cluster_specificity.png"))
+        display(Image(filename=PUBLIC / "lre_panel_umap_expression.png"))
+        """),
+        markdown("## Results"),
+        code("""
+        fig, axes = plt.subplots(1, 2, figsize=(10, 4.5), sharey=True)
+        plot_data = panel.sort_values("pristina_log2_fc_target_vs_other")
+        axes[0].barh(plot_data["gene_symbol"], plot_data["pristina_log2_fc_target_vs_other"], color="#4C78A8")
+        axes[0].set_xlabel("Pristina log2 FC: target vs other cells")
+        axes[0].set_title("Expression enrichment")
+        axes[1].barh(plot_data["gene_symbol"], plot_data["pristina_detection_difference"], color="#F58518")
+        axes[1].set_xlabel("Detection-fraction difference")
+        axes[1].set_title("Detection specificity")
+        fig.suptitle("Primary Pristina LRE-like spatial validation panel", y=1.02)
+        fig.tight_layout()
+        plt.show()
+        """),
+        code("""
+        context[[
+            "gene_symbol", "pristina_gene", "homology_quality",
+            "pristina_log2_fc_target_vs_other", "pristina_target_detection_fraction",
+            "context_check",
+        ]]
+        """),
+        markdown("""
+        ## Takeaways
+
+        - Use several primary panel genes together; a multiplex spatial pattern
+          is more informative than any individual gene.
+        - The panel tests whether anterior/mid-intestine 2 has a coherent
+          lysosomal/protein-digestion program.
+        - The absence of `cubn`, `dab2`, or `amn` enrichment means the current
+          data do not support simply calling these Pristina cells canonical
+          zebrafish LREs. Their function and orthology require independent
+          investigation.
+        """),
+    ])
     print(f"Wrote notebooks to {NOTEBOOKS}")
 
 

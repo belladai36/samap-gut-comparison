@@ -1,6 +1,6 @@
 # Living project report: Pristina gut cross-species comparison
 
-**Last updated:** 2026-07-26  
+**Last updated:** 2026-07-28  
 **Project status:** baseline SAMap analysis and exploratory module validation complete
 
 ## Aim
@@ -27,6 +27,20 @@ similarity and BLAST homology maps to connect non-identical gene repertoires.
 6. Performed a pre-specified, exploratory module-enrichment validation using
    normalized expression, translated reference markers, 2,000 label
    permutations, and Benjamini–Hochberg FDR correction.
+7. Built a spatial-validation priority panel for the LRE-like hypothesis from
+   the translated LRE module, Pristina expression specificity, and alignment
+   quality. The canonical zebrafish `cubn`, `dab2`, and `amn` candidates were
+   retained as context checks, not primary positive probes, because they are
+   not enriched in the Pristina target population.
+8. Confirmed the five primary LRE-like panel genes across every annotated
+   Pristina gut population. `anterior/mid-intestine 2` has rank 1 mean
+   normalized expression for all five genes (`fuca1.1`, `hexb`, `ctsl.1`,
+   `ctsbb`, and `naga`). This is cluster-specificity support, not spatial
+   validation.
+9. Prepared primary and backup 400-nt probe regions for all five LRE-like
+   targets. Each recommended region passed a conservative exact-20-mer
+   transcriptome screen with zero strong non-self matches. These are
+   platform-neutral target regions, not final assay oligos.
 
 ## Current findings
 
@@ -43,6 +57,13 @@ they do not turn cells into independent biological replicates or account for
 all donor, batch, or evolutionary dependence. The zebrafish input has one
 sample, so its inference must be especially cautious.
 
+For the LRE-like hypothesis, the primary spatial panel comprises five
+Pristina-enriched candidates connected to zebrafish lysosomal/protein-digestion
+genes: `PrileiEVm011523t1` (`fuca1.1`), `PrileiEVm008813t1` (`hexb`),
+`PrileiEVm014063t1` (`ctsl.1`), `PrileiEVm014379t1` (`ctsbb`), and
+`PrileiEVm012889t1` (`naga`). This supports testing a **lysosomal program**;
+it does not prove complete conservation of canonical zebrafish LRE machinery.
+
 ## Main outputs
 
 - [Cross-species best-match summary](public_results/pristina_cross_species_summary.csv)
@@ -50,6 +71,12 @@ sample, so its inference must be especially cautious.
 - [Module-enrichment statistics](public_results/cross_species_module_enrichment.csv)
 - [Module-enrichment methods and limitations](public_results/cross_species_module_enrichment_methods.md)
 - [Marker modules translated through BLAST](public_results/translated_reference_marker_modules.csv)
+- [LRE-like spatial validation panel](public_results/lre_validation_panel.md)
+- [LRE panel cluster-specificity table](public_results/lre_panel_cluster_specificity.csv)
+- [LRE panel target summary](public_results/lre_panel_target_summary.csv)
+- [LRE probe-region design and limitations](public_results/lre_probe_region_design.md)
+- [Recommended probe regions](public_results/lre_probe_region_recommendations.csv)
+- [LRE mechanistic context checks](public_results/lre_mechanistic_context_checks.csv)
 - [Public result figures and tables](public_results/README.md)
 
 ## Reproducible notebooks
@@ -57,6 +84,7 @@ sample, so its inference must be especially cautious.
 - [01 — SAMap mapping summary](notebooks/01_samap_mapping_summary.ipynb)
 - [02 — Cross-species module validation](notebooks/02_cross_species_module_validation.ipynb)
 - [03 — Priority marker review](notebooks/03_priority_marker_review.ipynb)
+- [04 — LRE-like spatial validation panel](notebooks/04_lre_validation_panel.ipynb)
 
 Each notebook uses the shareable tables in `public_results/`; it therefore does
 not require the large `.h5ad` objects or serialized SAMap model. Run from the
@@ -69,9 +97,11 @@ repository root with the project environment:
 
 ## Next steps
 
-1. Inspect LRE-associated module genes in Pristina and select a short,
-   biologically interpretable validation panel.
-2. Validate the leading candidates using spatial expression or in situ methods.
+1. Select an assay platform (HCR RNA-FISH, smFISH, or ISH/RNAscope) and use the
+   recommended target regions to create final assay-specific oligos.
+2. Validate the leading candidates using spatial expression or in situ methods;
+   require co-localization in anatomical anterior/mid intestine rather than
+   interpreting UMAP position as tissue location.
 3. When independent biological replicates are available, repeat the tests with
    donor/animal-aware pseudobulk rather than cell-level label permutations.
 4. Compare original SAMap outputs with the separate local-pattern method only
