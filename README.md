@@ -48,10 +48,11 @@ XDG_CACHE_HOME="$PWD/.cache" snakemake -n
 XDG_CACHE_HOME="$PWD/.cache" snakemake --cores 4
 ```
 
-The workflow validates expression/protein identifiers and metadata, writes the
-official SAMap outputs to `results/original_samap/`, and writes the separate
-statistical interpretation to `results/localsamap/`. The improved stage never
-overwrites the official SAMap model.
+The workflow validates expression/protein identifiers and metadata, then runs
+the official SAMap implementation and writes results to
+`results/original_samap/`. This public repository does not include an
+experimental local-pattern extension; that method should be released and
+installed separately before it is used in a reproducible workflow.
 
 ## Citation, datasets, and permissions
 
