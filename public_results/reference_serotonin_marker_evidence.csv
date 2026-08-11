@@ -1,0 +1,36 @@
+candidate,cluster,cell_type,marker,pristina_gene,n_cells,positive_cells,detection_fraction,mean_stored_expression,annotation,preferred_name
+serotonergic neuron,3,neurons 1,TPH1-like,PrileiEVm011352t1,5138,46,0.008952899961074349,0.3255252540111542,tryptophan 5-monooxygenase activity,TPH1
+serotonergic neuron,40,neurons 2,TPH1-like,PrileiEVm011352t1,231,0,0.0,0.0,tryptophan 5-monooxygenase activity,TPH1
+serotonergic neuron,41,neurons 3,TPH1-like,PrileiEVm011352t1,207,0,0.0,0.0,tryptophan 5-monooxygenase activity,TPH1
+serotonergic neuron,42,neurons 4,TPH1-like,PrileiEVm011352t1,203,0,0.0,0.0,tryptophan 5-monooxygenase activity,TPH1
+serotonergic neuron,45,neurons 5,TPH1-like,PrileiEVm011352t1,175,0,0.0,0.0,tryptophan 5-monooxygenase activity,TPH1
+serotonergic neuron,49,neurons 6,TPH1-like,PrileiEVm011352t1,127,0,0.0,0.0,tryptophan 5-monooxygenase activity,TPH1
+serotonergic neuron,59,neurons 7,TPH1-like,PrileiEVm011352t1,24,0,0.0,0.0,tryptophan 5-monooxygenase activity,TPH1
+serotonergic neuron,3,neurons 1,DDC-like,PrileiEVm010940t1,5138,12,0.0023355391202802647,0.06923387944698334,aromatic-L-amino-acid decarboxylase activity,DDC
+serotonergic neuron,40,neurons 2,DDC-like,PrileiEVm010940t1,231,0,0.0,0.0,aromatic-L-amino-acid decarboxylase activity,DDC
+serotonergic neuron,41,neurons 3,DDC-like,PrileiEVm010940t1,207,0,0.0,0.0,aromatic-L-amino-acid decarboxylase activity,DDC
+serotonergic neuron,42,neurons 4,DDC-like,PrileiEVm010940t1,203,0,0.0,0.0,aromatic-L-amino-acid decarboxylase activity,DDC
+serotonergic neuron,45,neurons 5,DDC-like,PrileiEVm010940t1,175,0,0.0,0.0,aromatic-L-amino-acid decarboxylase activity,DDC
+serotonergic neuron,49,neurons 6,DDC-like,PrileiEVm010940t1,127,0,0.0,0.0,aromatic-L-amino-acid decarboxylase activity,DDC
+serotonergic neuron,59,neurons 7,DDC-like,PrileiEVm010940t1,24,0,0.0,0.0,aromatic-L-amino-acid decarboxylase activity,DDC
+serotonergic neuron,3,neurons 1,VMAT-like 1,PrileiEVm008386t1,5138,40,0.007785130400934216,0.2885472774505615,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,40,neurons 2,VMAT-like 1,PrileiEVm008386t1,231,0,0.0,0.0,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,41,neurons 3,VMAT-like 1,PrileiEVm008386t1,207,0,0.0,0.0,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,42,neurons 4,VMAT-like 1,PrileiEVm008386t1,203,0,0.0,0.0,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,45,neurons 5,VMAT-like 1,PrileiEVm008386t1,175,0,0.0,0.0,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,49,neurons 6,VMAT-like 1,PrileiEVm008386t1,127,0,0.0,0.0,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,59,neurons 7,VMAT-like 1,PrileiEVm008386t1,24,0,0.0,0.0,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,3,neurons 1,VMAT-like 2,PrileiEVm008853t1,5138,18,0.0035033086804203972,0.15117458999156952,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,40,neurons 2,VMAT-like 2,PrileiEVm008853t1,231,0,0.0,0.0,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,41,neurons 3,VMAT-like 2,PrileiEVm008853t1,207,0,0.0,0.0,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,42,neurons 4,VMAT-like 2,PrileiEVm008853t1,203,0,0.0,0.0,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,45,neurons 5,VMAT-like 2,PrileiEVm008853t1,175,0,0.0,0.0,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,49,neurons 6,VMAT-like 2,PrileiEVm008853t1,127,0,0.0,0.0,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,59,neurons 7,VMAT-like 2,PrileiEVm008853t1,24,0,0.0,0.0,Major Facilitator Superfamily,SLC18A1
+serotonergic neuron,3,neurons 1,DAT-like monoamine transporter,PrileiEVm006035t1,5138,31,0.006033476060724017,0.1854887455701828,Sodium:neurotransmitter symporter family,DAT
+serotonergic neuron,40,neurons 2,DAT-like monoamine transporter,PrileiEVm006035t1,231,0,0.0,0.0,Sodium:neurotransmitter symporter family,DAT
+serotonergic neuron,41,neurons 3,DAT-like monoamine transporter,PrileiEVm006035t1,207,1,0.004830917874396135,0.09631001949310303,Sodium:neurotransmitter symporter family,DAT
+serotonergic neuron,42,neurons 4,DAT-like monoamine transporter,PrileiEVm006035t1,203,0,0.0,0.0,Sodium:neurotransmitter symporter family,DAT
+serotonergic neuron,45,neurons 5,DAT-like monoamine transporter,PrileiEVm006035t1,175,0,0.0,0.0,Sodium:neurotransmitter symporter family,DAT
+serotonergic neuron,49,neurons 6,DAT-like monoamine transporter,PrileiEVm006035t1,127,0,0.0,0.0,Sodium:neurotransmitter symporter family,DAT
+serotonergic neuron,59,neurons 7,DAT-like monoamine transporter,PrileiEVm006035t1,24,0,0.0,0.0,Sodium:neurotransmitter symporter family,DAT
