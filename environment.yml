@@ -15,5 +15,6 @@ dependencies:
   - jupyterlab
   - ipykernel
   - openpyxl>=3.1
+  - statsmodels>=0.14
   - pip:
       - sc-samap==3.0.1
