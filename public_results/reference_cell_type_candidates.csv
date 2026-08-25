@@ -1,0 +1,4 @@
+candidate,cluster,cell_type,n_cells,evidence_status,key_evidence,interpretation
+striated muscle,5,muscle 1,4491,supported reference candidate,"myosin, striated-muscle light chain, troponin, and tropomyosin are top markers",appropriate positive reference after matching comparison-species striated muscle
+striated muscle,6,muscle 2,3636,supported reference candidate,myosin and striated contractile-complex genes dominate the marker list,appropriate positive reference after matching comparison-species striated muscle
+serotonergic neuron,3,neurons 1,5138,provisional subpopulation candidate,all 46 TPH1-like-positive neuronal cells occur in cluster 3; 9 also express a VMAT-like transcript and 3 also express DDC-like,likely a rare serotonergic subset within heterogeneous neurons 1; subclustering is required

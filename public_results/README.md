@@ -43,6 +43,25 @@ and credit all upstream datasets and tools listed in [`REFERENCES.md`](../REFERE
 - `lre_probe_candidate_regions.fasta`, `lre_probe_candidate_regions.csv`, and
   `lre_probe_region_recommendations.csv`: platform-neutral candidate sequences
   and one primary plus one backup region for each of the five panel genes.
+- `reference_cell_type_candidates.csv` and `reference_cell_type_candidates.md`:
+  evidence assessment of the professor-suggested striated-muscle and
+  serotonergic-neuron references, including the limitation that the current
+  comparison atlases do not contain those positive reference populations.
+- `reference_muscle_marker_evidence.csv` and
+  `reference_serotonin_marker_evidence.csv`: published marker-table and
+  full-atlas expression evidence underlying that assessment.
+- `serotonergic_neuron_subclustering.md` and
+  `serotonergic_subcluster_summary.csv`: outcome of marker-independent
+  reclustering of the Pristina `neurons 1` population.
+- `serotonergic_marker_enrichment.csv`,
+  `serotonergic_resolution_stability.csv`,
+  `serotonergic_cluster_selection_permutation.csv`, and
+  `serotonergic_library_support.csv`: inferential, sensitivity, and
+  experiment-level evidence for the provisional serotonergic-like community.
+- `serotonergic_candidate_markers.csv`,
+  `serotonergic_neuron_subclustering_umap.png`, and
+  `serotonergic_marker_enrichment.png`: differential markers and figures for
+  interpreting the candidate population.
 
 ## Interpretation
 

@@ -1,7 +1,7 @@
 # Living project report: Pristina gut cross-species comparison
 
-**Last updated:** 2026-07-28  
-**Project status:** baseline SAMap analysis and exploratory module validation complete
+**Last updated:** 2026-08-25
+**Project status:** baseline SAMap analysis, module validation, and Pristina serotonergic-neuron subclustering complete
 
 ## Aim
 
@@ -41,6 +41,13 @@ similarity and BLAST homology maps to connect non-identical gene repertoires.
    targets. Each recommended region passed a conservative exact-20-mer
    transcriptome screen with zero strong non-self matches. These are
    platform-neutral target regions, not final assay oligos.
+10. Reclustered the 5,138 Pristina `neurons 1` cells without using serotonin
+    markers to define the clustering features. A stable 226-cell community
+    contains 30 of 46 TPH1-like-positive neurons. TPH1-like detection is 13.3%
+    in the candidate versus 0.33% elsewhere (odds ratio 46.8; BH-adjusted
+    Fisher P = 3.65e-30). None of 10,000 shuffled datasets produced an equally
+    strong best-cluster enrichment (empirical P = 1/10,001). The candidate is
+    retained as serotonergic-like and provisional, not a confirmed identity.
 
 ## Current findings
 
@@ -64,6 +71,14 @@ genes: `PrileiEVm011523t1` (`fuca1.1`), `PrileiEVm008813t1` (`hexb`),
 `PrileiEVm012889t1` (`naga`). This supports testing a **lysosomal program**;
 it does not prove complete conservation of canonical zebrafish LRE machinery.
 
+For the professor-suggested neuronal reference, marker-independent
+subclustering supports a rare serotonergic-like community within `neurons 1`.
+The community is stable from Leiden resolution 0.2 to 0.8 (Jaccard 0.82–0.94)
+and is represented in all nine libraries. Detectable TPH1-like-positive cells
+within it occur in seven libraries from two of three experiments. Sparse
+marker detection and the lack of a vertebrate serotonergic reference in the
+current gut-only SAMap inputs remain material limitations.
+
 ## Main outputs
 
 - [Cross-species best-match summary](public_results/pristina_cross_species_summary.csv)
@@ -77,6 +92,12 @@ it does not prove complete conservation of canonical zebrafish LRE machinery.
 - [LRE probe-region design and limitations](public_results/lre_probe_region_design.md)
 - [Recommended probe regions](public_results/lre_probe_region_recommendations.csv)
 - [LRE mechanistic context checks](public_results/lre_mechanistic_context_checks.csv)
+- [Serotonergic subclustering report](public_results/serotonergic_neuron_subclustering.md)
+- [Serotonergic candidate summary](public_results/serotonergic_subcluster_summary.csv)
+- [Marker enrichment tests](public_results/serotonergic_marker_enrichment.csv)
+- [Resolution stability](public_results/serotonergic_resolution_stability.csv)
+- [Cluster-selection permutation test](public_results/serotonergic_cluster_selection_permutation.csv)
+- [Library-level support](public_results/serotonergic_library_support.csv)
 - [Public result figures and tables](public_results/README.md)
 
 ## Reproducible notebooks
@@ -85,6 +106,7 @@ it does not prove complete conservation of canonical zebrafish LRE machinery.
 - [02 — Cross-species module validation](notebooks/02_cross_species_module_validation.ipynb)
 - [03 — Priority marker review](notebooks/03_priority_marker_review.ipynb)
 - [04 — LRE-like spatial validation panel](notebooks/04_lre_validation_panel.ipynb)
+- [05 — Serotonergic-neuron subclustering](notebooks/05_serotonergic_neuron_subclustering.ipynb)
 
 Each notebook uses the shareable tables in `public_results/`; it therefore does
 not require the large `.h5ad` objects or serialized SAMap model. Run from the
@@ -97,14 +119,19 @@ repository root with the project environment:
 
 ## Next steps
 
-1. Select an assay platform (HCR RNA-FISH, smFISH, or ISH/RNAscope) and use the
+1. Obtain human and zebrafish single-cell references containing annotated
+   serotonergic neurons and striated muscle; the current gut-only inputs do not
+   contain valid positive comparison populations.
+2. Carry the provisional 226-cell serotonergic-like Pristina community into an
+   expanded SAMap run and compare it with curated positive and negative pairs.
+3. Select an assay platform (HCR RNA-FISH, smFISH, or ISH/RNAscope) and use the
    recommended target regions to create final assay-specific oligos.
-2. Validate the leading candidates using spatial expression or in situ methods;
+4. Validate the leading candidates using spatial expression or in situ methods;
    require co-localization in anatomical anterior/mid intestine rather than
    interpreting UMAP position as tissue location.
-3. When independent biological replicates are available, repeat the tests with
+5. When independent biological replicates are available, repeat the tests with
    donor/animal-aware pseudobulk rather than cell-level label permutations.
-4. Compare original SAMap outputs with the separate local-pattern method only
+6. Compare original SAMap outputs with the separate local-pattern method only
    after defining the comparison endpoints and validation criteria in advance.
 
 ## How to keep this report current
