@@ -1,0 +1,3 @@
+organism,accession,reference_population,technology,processed_counts,cell_labels,gene_ids,current_status,key_limitation
+human,GSE76381,Sert cells from fetal ventral midbrain,STRT-seq,yes,yes,gene symbols,usable after Ensembl translation,developmental tissue and plate-based protocol
+zebrafish,GSE226494,intraspinal serotonergic neurons from sox1a lineage,10x Genomics,yes,no barcode-level labels published with GEO,Ensembl IDs and symbols,counts validated; labels pending,developmental spinal population and absent public barcode-to-label table

@@ -62,6 +62,21 @@ and credit all upstream datasets and tools listed in [`REFERENCES.md`](../REFERE
   `serotonergic_neuron_subclustering_umap.png`, and
   `serotonergic_marker_enrichment.png`: differential markers and figures for
   interpreting the candidate population.
+- `serotonergic_reference_dataset_screen.csv` and
+  `serotonergic_reference_dataset_screen.md`: source, usability decision, and
+  limitations for the independently annotated human and zebrafish
+  serotonergic reference candidates.
+- `human_serotonergic_reference_quality.csv`: structural, metadata, positive-
+  class-support, and marker-detection checks for the converted GSE76381 human
+  ventral-midbrain reference.
+
+The companion notebook
+[`06_serotonergic_reference_dataset_quality.ipynb`](../notebooks/06_serotonergic_reference_dataset_quality.ipynb)
+reproduces the compact quality review and marker comparison. The local
+GSE76381 conversion is created by
+[`prepare_human_serotonergic_reference.py`](../workflow/scripts/prepare_human_serotonergic_reference.py);
+raw GEO files and generated `.h5ad` objects are intentionally excluded from
+the repository.
 
 ## Interpretation
 

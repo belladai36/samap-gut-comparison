@@ -1,0 +1,19 @@
+check,value,status,interpretation
+cells,1977,pass,CEF cell count agrees with its header
+matched_ensembl_genes,16105,pass,82.5% of 19531 source genes retained by unique exact symbol mapping
+duplicate_cell_ids,0,pass,cell identifiers are unique
+duplicate_gene_ids,0,pass,translated Ensembl identifiers are unique
+missing_required_metadata,0,pass,cell_type timepoint and sample_id are complete
+negative_counts,0,pass,count values are nonnegative
+noninteger_counts,0,pass,count values are integer-valued
+matrix_sparsity,0.869920,pass,expected sparse single-cell molecule-count matrix
+biological_samples,7,pass,seven embryo identifiers represented overall
+hSert_cells,14,caution,positive reference class is small
+hSert_samples,3,caution,positive cells occur in only three embryo identifiers
+hSert_timepoints,3,caution,positive cells occur at weeks 9 10 and 11
+TPH2_detection_hSert,0.642857,pass,strong enrichment relative to 0.006114 in other cells
+SLC6A4_detection_hSert,0.714286,pass,strong enrichment relative to 0.020887 in other cells
+FEV_detection_hSert,0.714286,pass,strong enrichment relative to 0.022924 in other cells
+DDC_detection_hSert,0.785714,pass,enriched but less specific than TPH2 SLC6A4 and FEV
+GATA3_detection_hSert,0.785714,pass,enriched but expressed in additional populations
+LMX1B_detection_hSert,0.357143,caution,moderate detection consistent with single-cell dropout
